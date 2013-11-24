@@ -6,6 +6,7 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt
 RUN apt-get -q update
 RUN apt-get -q -y install liquidsoap
 
-CMD ["liquidsoap"]
+ENTRYPOINT ["liquidsoap"]
+CMD ["-h"]
 
 USER nobody
