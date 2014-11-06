@@ -1,10 +1,10 @@
-FROM ubuntu
+FROM ubuntu:latest
 
 MAINTAINER Manfred Touron m@42.am
 
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
-RUN apt-get -q update
-RUN apt-get -q -y install liquidsoap
+RUN apt-get -q update && \
+    apt-get -q -y install liquidsoap && \
+    apt-get clean
 
 ENTRYPOINT ["liquidsoap"]
 CMD ["-h"]
