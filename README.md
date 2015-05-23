@@ -18,3 +18,8 @@ Extends Dockerfile
     FROM moul/liquidsoap
     ADD ./config.liq /config/config.liq
     CMD ["/config/config.liq"]
+
+Examples
+--------
+
+- https://github.com/ultreme/scc-radio/
