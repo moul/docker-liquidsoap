@@ -1,6 +1,8 @@
 Liquidsoap in Docker
 ====================
 
+[![GuardRails badge](https://badges.production.guardrails.io/moul/docker-liquidsoap.svg)](https://www.guardrails.io)
+
 Liquidsoap Dockerfile
 
 https://index.docker.io/u/moul/liquidsoap/
