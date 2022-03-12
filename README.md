@@ -8,9 +8,9 @@ https://index.docker.io/u/moul/liquidsoap/
 Run
 ---
 
-    docker run moul/liquidsoap -h
+    docker run --user liquidsoap moul/liquidsoap liquidsoap -h
 
-    docker run moul/liquidsoap 'output.dummy(blank())'
+    docker run --user liquidsoap moul/liquidsoap liquidsoap 'output.dummy(blank())'
 
 Extends Dockerfile
 ------------------
